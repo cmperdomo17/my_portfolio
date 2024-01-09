@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.animation-fill-forwards {
+    animation-fill-mode: forwards;
+}
+
 /* .hover-shadow-white, .hover-shadow-blue {
     transition: text-shadow 0.4s ease-in-out;
 }

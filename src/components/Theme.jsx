@@ -1,11 +1,17 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+        const localData = localStorage.getItem('darkMode');
+        return localData ? JSON.parse(localData) : false;
+    });
 
-    // eslint-disable-next-line no-unused-vars
+    useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(darkMode));
+    }, [darkMode]);
+
     const handleClick = () => {
         setDarkMode(!darkMode);
     };
