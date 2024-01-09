@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center items-center h-screen ${darkMode ? 'bg-slate-950' : 'bg-slate-300'}`}>
+    <div className={`flex flex-col justify-center items-center h-screen ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <button 
             onClick={handleClick} 
@@ -19,7 +19,7 @@ const Home = () => {
             <img 
                 src={`${process.env.PUBLIC_URL}/me2.png`} 
                 alt="Mario" 
-                className={`w-52 h-52 rounded-full border-4 ${darkMode ? 'bg-blue-500' : 'bg-slate-200 border-blue-500'}`}
+                className={`w-52 h-52 rounded-full border-4 hover:scale-105 transition-all ease-out ${darkMode ? 'bg-blue-500' : 'bg-slate-200 border-blue-500'}`}
             />
         </div>
 
