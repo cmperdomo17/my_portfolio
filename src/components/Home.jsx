@@ -11,15 +11,15 @@ const Home = () => {
         
         <button 
             onClick={handleClick} 
-            className={`p-2 m-4 rounded-full shadow hover:scale-95 transition-colors duration-300 ${darkMode ? 'bg-gray-700 text-white' : 'bg-blue-500 text-white'}`}>
+            className={`p-2 m-4 rounded-full shadow hover:scale-95 transition-all duration-200 ${darkMode ? 'bg-gray-700 text-white' : 'bg-blue-500 text-white'}`}>
             {darkMode ? <FaMoon size={25} /> : <FaSun size={25} />}
         </button>
 
         <div className="flex justify-center py-4">
             <img 
-                src={`${process.env.PUBLIC_URL}/me.png`} 
+                src={`${process.env.PUBLIC_URL}/me2.png`} 
                 alt="Mario" 
-                className={`rounded-full border-4 ${darkMode ? 'bg-blue-500' : 'bg-slate-200 border-blue-500'}`}
+                className={`w-52 h-52 rounded-full border-4 ${darkMode ? 'bg-blue-500' : 'bg-slate-200 border-blue-500'}`}
             />
         </div>
 
@@ -37,11 +37,18 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="flex justify-center pt-20">
+            <div className="flex justify-center pt-16 ">
                 <p className={`text-xl hover:scale-110 transition-all ease-out ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    I'm a software developer with a passion for building things
+                    I'm a software developer with a passion for learning new technologies and building cool stuff.
                 </p>
             </div>
+
+            <div className="flex justify-center pb-12">
+                <button className={`p-2 px-4 m-4 text-xl rounded-full hover:scale-90 transition-all duration-200 bg-blue-500 text-white `}>
+                    Contact Me!
+                </button>
+            </div>
+
         </div>
     </div>
 
