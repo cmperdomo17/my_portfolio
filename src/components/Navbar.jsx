@@ -7,7 +7,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className={`flex justify-between items-center pt-4 px-20 ${darkMode ? 'bg-black text-white' : 'bg-slate-300 text-slate-950'}`}>
+            <nav className={`flex fixed w-full justify-between items-center pt-4 pb-2 px-20 backdrop-blur-2xl md:flex md:justify-between md:items-center ${darkMode ? 'bg-transparent text-white' : 'bg-transparent text-slate-950'}`}>
 
                 <div className="font-ubuntu-mono font-bold text-center cursor-pointer">
                     <h1 className="text-2xl hover:scale-110 transition-all ease-out ">
