@@ -16,7 +16,7 @@ const NavBar = () => {
     return (
         <div>
             <nav className={`${darkMode ? 'bg-transparent text-white' : 'bg-transparent text-slate-950'}`}>
-                <div className="flex flex-col md:flex-row fixed w-full justify-between items-center pt-4 pb-2 px-20 backdrop-blur-2xl">
+                <div className="flex flex-col md:flex-row fixed w-full justify-between items-center pt-4 pb-2 px-20 backdrop-blur-3xl">
                     <Link to='/' className="font-Onest font-bold text-center cursor-pointer mb-4 md:mb-0">
                         <h1 className="text-xl hover:scale-110 transition-all ease-out ">
                             &lt; mario.<span className={`${darkMode ? 'text-blue-300' : 'text-blue-600' }`}>dev </span>/&gt;

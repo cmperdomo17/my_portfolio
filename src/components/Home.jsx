@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[100vh] md:h-[110vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[170vh] md:h-[200vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
@@ -43,9 +43,9 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center pb-12 pt-4">
+            <div className="flex justify-center pb-4 pt-4">
 
-                <Link to="/contact" className={`p-2 px-4 m-4 text-xl rounded-full hover:scale-110 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
+                <Link to="/contact" className={`p-2 px-4 m-4 text-lg rounded-full hover:scale-110 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
                     Contact Me!
                 </Link>
 
@@ -58,11 +58,15 @@ const Home = () => {
                 </a>
             </div>
 
-            <div className="flex justify-center pt-4">
-                <div className={`text-lg md:text-2xl font-Onest ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+            <div className="flex justify-center">
+                <div className={`text-lg md:text-5xl font-Onest ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                     <h1>
                         Recent Projects
                     </h1>
+
+                    <p>
+                        My projects are available <br /> on my portfolio <br /> and on my GitHub. <br /> Check them out! <br /> Hola <br /> Mundo <br /> Como <br /> Estan <br /> Todes <br /> Jeje <br /> Y tu?
+                    </p>
                 </div>
             </div>
         </div>
