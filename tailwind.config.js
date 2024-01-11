@@ -7,8 +7,8 @@ module.exports = {
         'ubuntu-mono': ['Ubuntu mono', 'Monospace', 'Bold'],
       },
       animation: {
-        typing1: 'typing 3s steps(42), blink, .5s infinite step-end alternate',
-        typing2: 'typing 3s steps(50), blink, .5s infinite step-end alternate',
+        typing1: 'typing 2s steps(42), blink, .5s infinite step-end alternate',
+        typing2: 'typing 2s steps(50), blink, .5s infinite step-end alternate',
       },
       keyframes: {
         typing: {
