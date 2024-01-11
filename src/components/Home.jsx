@@ -7,26 +7,26 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[105vh] md:h-[110vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[100vh] md:h-[110vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <div className="flex justify-center pb-4">
             <img 
                 src={`${process.env.PUBLIC_URL}/me2.png`} 
                 alt="Mario" 
-                className={`w-32 h-32 md:w-52 md:h-52 rounded-full border-4 hover:scale-105 transition-all ease-out ${darkMode ? 'bg-blue-400' : 'bg-slate-200 border-blue-500'}`}
+                className={`w-40 h-40 md:w-52 md:h-52 rounded-full border-4 hover:scale-105 transition-all ease-out ${darkMode ? 'bg-blue-400' : 'bg-slate-200 border-blue-500'}`}
             />
         </div>
 
         <div className="font-ubuntu-mono font-bold text-center">
 
             <div className="flex justify-center">
-                <h1 className={`text-2xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
+                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
                     Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Mario!</span>
                 </h1>
             </div>
             
             <div className="flex justify-center">
-                <h1 className={`text-lg md:text-3xl animate-typing2 animation-fill-forwards ${darkMode ? 'text-white' : 'text-slate-900'} overflow-hidden border-r-4 w-25 text-nowrap`}>
+                <h1 className={`text-xl md:text-3xl animate-typing2 animation-fill-forwards ${darkMode ? 'text-white' : 'text-slate-900'} overflow-hidden border-r-4 w-25 text-nowrap`}>
                     Systems Engineer
                 </h1>
             </div>
