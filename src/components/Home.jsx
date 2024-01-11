@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[170vh] md:h-[200vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[142vh] md:h-[200vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
