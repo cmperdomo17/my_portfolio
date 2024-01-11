@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from './Theme';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -9,13 +10,13 @@ const Home = () => {
     
     <div className={`flex flex-col justify-center h-[100vh] md:h-[110vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
-        <div className="flex justify-center pb-4">
+        <Link to='/about' className="flex justify-center pb-4">
             <img 
                 src={`${process.env.PUBLIC_URL}/me2.png`} 
                 alt="Mario" 
                 className={`w-40 h-40 md:w-52 md:h-52 rounded-full border-4 hover:scale-105 transition-all ease-out ${darkMode ? 'bg-blue-400' : 'bg-slate-200 border-blue-500'}`}
             />
-        </div>
+        </Link>
 
         <div className="font-ubuntu-mono font-bold text-center">
 
@@ -43,9 +44,11 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center pb-12 pt-4">
-                <button className={`p-2 px-4 m-4 text-xl rounded-full hover:scale-110 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
+
+                <Link to="/contact" className={`p-2 px-4 m-4 text-xl rounded-full hover:scale-110 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
                     Contact Me!
-                </button>
+                </Link>
+
                 <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 px-3 m-4 text-xl rounded-full hover:scale-125 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'} flex items-center justify-center`}>
                     <FaLinkedin size={25} />
                 </a>
