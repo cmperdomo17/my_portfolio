@@ -11,9 +11,9 @@ const Footer = () => {
             <footer className={`flex justify-center items-center text-center h-14 ${darkMode ? 'bg-slate-950 text-white' : 'bg-slate-200 text-slate-950'}`}>
                 <p className="text-md font-ubuntu-mono flex items-center justify-center space-x-2">
                     <span className={`${darkMode ? 'text-zinc-300' : 'text-slate-950'}`}>Built by <span className={`${darkMode ? 'text-white' : 'text-slate-950'} font-semibold text-xl`}>mario</span>.<span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} font-semibold text-xl`}>dev</span> with</span>
-                    <FaReact size={32} className="text-blue-400" />
+                    <FaReact size={32}className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
                     <span className={`${darkMode ? 'text-zinc-300' : 'text-slate-950'}`}>and</span>
-                    <SiTailwindcss size={32} className="text-blue-400" />
+                    <SiTailwindcss size={32} className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
                 </p>
             </footer>
         </div>

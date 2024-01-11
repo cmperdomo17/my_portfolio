@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[120vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[100vh] md:h-[110vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <div className="flex justify-center pb-4">
             <img 
@@ -20,7 +20,7 @@ const Home = () => {
         <div className="font-ubuntu-mono font-bold text-center">
 
             <div className="flex justify-center">
-                <h1 className={`text-7xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
+                <h1 className={`text-6xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
                     Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Mario!</span>
                 </h1>
             </div>
@@ -32,7 +32,7 @@ const Home = () => {
             </div>
 
             <div className="pt-10">
-                <div className={`text-xl ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                <div className={`text-xl font-sans ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <p>
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
                     </p>
