@@ -17,13 +17,13 @@ const NavBar = () => {
         <div>
             <nav className={`${darkMode ? 'bg-transparent text-white' : 'bg-transparent text-slate-950'}`}>
                 <div className="flex flex-col md:flex-row fixed w-full justify-between items-center pt-4 pb-2 px-20 backdrop-blur-2xl">
-                    <Link to='/' className="font-ubuntu-mono font-bold text-center cursor-pointer mb-4 md:mb-0">
+                    <Link to='/' className="font-Onest font-bold text-center cursor-pointer mb-4 md:mb-0">
                         <h1 className="text-xl hover:scale-110 transition-all ease-out ">
                             &lt; mario.<span className={`${darkMode ? 'text-blue-300' : 'text-blue-600' }`}>dev </span>/&gt;
                         </h1>
                     </Link>
 
-                    <div className={`flex items-center space-x-12 font-ubuntu-mono font-semibold text-sm duration-500 md:text-base`}>
+                    <div className={`flex items-center space-x-12 font-Onest font-semibold text-sm duration-500 md:text-base`}>
 
                         <NavLink to="/about">
                             About

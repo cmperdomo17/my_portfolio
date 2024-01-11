@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'ubuntu-mono': ['Ubuntu mono', 'Monospace', 'Bold'],
+        'Onest': ['Onest', 'Monospace'],
       },
       animation: {
         typing1: 'typing 2s steps(42), blink, .5s infinite step-end alternate',

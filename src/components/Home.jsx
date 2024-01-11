@@ -18,7 +18,7 @@ const Home = () => {
             />
         </Link>
 
-        <div className="font-ubuntu-mono font-bold text-center">
+        <div className="font-Onest font-bold text-center">
 
             <div className="flex justify-center">
                 <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
@@ -33,7 +33,7 @@ const Home = () => {
             </div>
 
             <div className="pt-10">
-                <div className={`text-base md:text-xl font-sans ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                <div className={`text-base md:text-xl font-Onest ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <p>
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
                     </p>
@@ -56,6 +56,14 @@ const Home = () => {
                 <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 px-3 m-4 text-xl rounded-full hover:scale-125 transition-all duration-200 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'} flex items-center justify-center`}>
                     <FaGithub size={25} />
                 </a>
+            </div>
+
+            <div className="flex justify-center pt-4">
+                <div className={`text-lg md:text-2xl font-Onest ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                    <h1>
+                        Recent Projects
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
