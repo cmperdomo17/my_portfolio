@@ -14,7 +14,7 @@ const Home = () => {
             <img 
                 src={`${process.env.PUBLIC_URL}/me2.png`} 
                 alt="Mario" 
-                className={`w-40 h-40 md:w-52 md:h-52 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-slate-200 '}`}
+                className={`w-40 h-40 md:w-52 md:h-52 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-white '}`}
             />
         </Link>
 
