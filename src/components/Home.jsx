@@ -2,13 +2,15 @@ import React, { useContext } from "react";
 import { ThemeContext } from './Theme';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+// import { FaExternalLinkAlt } from "react-icons/fa";
+// import { PROJECTS } from '../data/ProjectsData';
 
 const Home = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
     
-    <div className={`flex flex-col justify-center h-[142vh] md:h-[200vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[110vh] md:h-[130vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
@@ -38,7 +40,7 @@ const Home = () => {
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
                     </p>
                     <p>
-                        I'm a seventh semester Systems Engineering student at <a href="https://www.unicauca.edu.co/" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>University of Cauca</a>.
+                        I'm a seventh semester Systems Engineering student at <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>University of Cauca</a>.
                     </p>
                 </div>
             </div>
@@ -59,19 +61,39 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className={`text-lg md:text-5xl font-Onest ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                <div className={`text-lg md:text-5xl font-Onest pb-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                     <h1>
                         Recent Projects
                     </h1>
-
-                    <p>
-                        My projects are available <br /> on my portfolio <br /> and on my GitHub. <br /> Check them out! <br /> Hola <br /> Mundo <br /> Como <br /> Estan <br /> Todes <br /> Jeje <br /> Y tu?
-                    </p>
                 </div>
             </div>
+
+            {/* <div className="projects-grid">
+                {
+                    PROJECTS.map((project) => (
+                        <article key={project.id}>
+                            <a href={`project/${project.id}`}>
+                                <img src={`${process.env.PUBLIC_URL}/mockup.png`} alt={project.title} className=" h-40 w-60" />
+                                <div className="overlay">
+                                    <h3>{project.title}</h3>
+                                    <p>{project.description}</p>
+                                    <ul className="tags">
+                                        {project.tags.map((tag, index) => (
+                                            <li key={index}>{tag}</li>
+                                        ))}
+                                    </ul>
+                                    <div className="view-details">
+                                        See details
+                                        <FaExternalLinkAlt />
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    ))
+                }
+            </div> */}
         </div>
     </div>
-
     )
 }
 
