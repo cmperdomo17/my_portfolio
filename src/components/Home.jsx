@@ -72,30 +72,30 @@ const Home = () => {
                 <div className="flex justify-center items-center col-start-1 row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
                     <img className="w-full h-full hover:opacity-90" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 2" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">Digital Notary</h3>
-                        <p className="text-white">Digital notary where you can request procedures online</p>
+                        <h3 className="text-blue-500">ToDo App</h3>
+                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
                     </div>
                 </div>
 
                 <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-2 md:row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
                     <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 2" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">ToDo App</h3>
-                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
+                        <h3 className="text-blue-500">Digital Notary</h3>
+                        <p className="text-white">Digital notary where you can request procedures online</p>
                     </div>
                 </div>
                 <div className="flex justify-center items-center col-start-1 md:col-start-1 row-start-3 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
                     <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 3" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">Digital Notary</h3>
-                        <p className="text-white">Digital notary where you can request procedures online</p>
+                        <h3 className="text-blue-500">ToDo App</h3>
+                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
                     </div>
                 </div>
                 <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-4 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
                     <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 4" />
                     <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">ToDo App</h3>
-                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
+                        <h3 className="text-blue-500">Digital Notary</h3>
+                        <p className="text-white">Digital notary where you can request procedures online</p>
                     </div>
                 </div>
             </section>
