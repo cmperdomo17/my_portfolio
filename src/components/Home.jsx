@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[110vh] md:h-[130vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-[250vh] md:h-[380vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
@@ -68,30 +68,37 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* <div className="projects-grid">
-                {
-                    PROJECTS.map((project) => (
-                        <article key={project.id}>
-                            <a href={`project/${project.id}`}>
-                                <img src={`${process.env.PUBLIC_URL}/mockup.png`} alt={project.title} className=" h-40 w-60" />
-                                <div className="overlay">
-                                    <h3>{project.title}</h3>
-                                    <p>{project.description}</p>
-                                    <ul className="tags">
-                                        {project.tags.map((tag, index) => (
-                                            <li key={index}>{tag}</li>
-                                        ))}
-                                    </ul>
-                                    <div className="view-details">
-                                        See details
-                                        <FaExternalLinkAlt />
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    ))
-                }
-            </div> */}
+            <section className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 justify-center mx-4 md:mx-24 gap-4">        
+                <div className="flex justify-center items-center col-start-1 row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
+                    <img className="w-full h-full hover:opacity-90" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 2" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 className="text-blue-500">Digital Notary</h3>
+                        <p className="text-white">Digital notary where you can request procedures online</p>
+                    </div>
+                </div>
+
+                <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-2 md:row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
+                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 2" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 className="text-blue-500">ToDo App</h3>
+                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
+                    </div>
+                </div>
+                <div className="flex justify-center items-center col-start-1 md:col-start-1 row-start-3 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
+                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 3" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 className="text-blue-500">Digital Notary</h3>
+                        <p className="text-white">Digital notary where you can request procedures online</p>
+                    </div>
+                </div>
+                <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-4 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
+                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 4" />
+                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <h3 className="text-blue-500">ToDo App</h3>
+                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     )
