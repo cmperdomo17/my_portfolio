@@ -2,10 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.animation-fill-forwards {
-    animation-fill-mode: forwards;
-}
-
 .navbar {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
 }

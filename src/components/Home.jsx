@@ -23,13 +23,13 @@ const Home = () => {
         <div className="font-Onest font-bold text-center">
 
             <div className="flex justify-center">
-                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'} animate-typing1 animation-fill-forwards overflow-hidden border-r-4 w-12 text-nowrap`}>
+                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Mario!</span>
                 </h1>
             </div>
             
             <div className="flex justify-center">
-                <h1 className={`text-xl md:text-3xl animate-typing2 animation-fill-forwards ${darkMode ? 'text-white' : 'text-slate-900'} overflow-hidden border-r-4 w-25 text-nowrap`}>
+                <h1 className={`text-xl md:text-3xl ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     Systems Engineer
                 </h1>
             </div>
