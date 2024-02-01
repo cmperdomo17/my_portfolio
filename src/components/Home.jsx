@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { ThemeContext } from './Theme';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import { FaExternalLinkAlt } from "react-icons/fa";
-// import { PROJECTS } from '../data/ProjectsData';
 
 const Home = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -23,19 +21,19 @@ const Home = () => {
         <div className="font-Onest font-bold text-center">
 
             <div className="flex justify-center">
-                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Mario!</span>
                 </h1>
             </div>
             
             <div className="flex justify-center">
-                <h1 className={`text-xl md:text-3xl ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                <h1 className={`text-xl md:text-3xl ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     Systems Engineer
                 </h1>
             </div>
 
             <div className="pt-10">
-                <div className={`text-base md:text-xl mx-auto max-w-[700px] font-Onest ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                <div className={`text-base md:text-xl mx-auto max-w-[700px] font-Onest ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     <p className="text-pretty">
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
                         I'm a seventh semester Systems Engineering student at <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>University of Cauca</a>.
