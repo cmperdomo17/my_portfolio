@@ -5,6 +5,7 @@ import { FiMail } from 'react-icons/fi';
 import { MdLocationOn } from 'react-icons/md';
 import { FiPhone } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
+import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiReact } from 'react-icons/si';
 
 const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -18,11 +19,11 @@ const AboutMe = () => {
                         Carlos Mario Perdomo
                     </h1>
                     {/* Label */}
-                    <h2 className={`text-sm md:text-2xl mb-2`}>
+                    <h2 className={`text-sm md:text-2xl mb-2 ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         Systems Engineer Student
                     </h2>
                     {/* Span of city and region */}
-                    <span className={` text-sm md:text-lg font-ubuntu-mono`}>
+                    <span className={` text-sm md:text-lg font-ubuntu-mono ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         <MdLocationOn size={18} className="inline mr-2" />
                         Pitalito - Huila, Colombia
                     </span>
@@ -62,8 +63,8 @@ const AboutMe = () => {
                         About Me
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty`}>
-                        +15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.
+                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                        I am currently studying the seventh semester of Systems Engineering. I am passionate about frontend development. I live in Pitalito, Huila. I have worked on various web pages remotely and have participated in collaborative projects.
                     </p>
                 </div>
             </div>
@@ -75,8 +76,8 @@ const AboutMe = () => {
                         Experience
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty`}>
-                        Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.
+                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                        I have 1 year of work experience doing frontend for web pages for various clients.
                     </p>
                 </div>
             </div>
@@ -88,8 +89,8 @@ const AboutMe = () => {
                         Education
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty`}>
-                        Ingeniero de Sistemas, Universidad del Cauca. &nbsp; | &nbsp; Desarrollador Web Full Stack, Platzi. &nbsp; | &nbsp; Desarrollador Web Full Stack, FreeCodeCamp.
+                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                        Ingeniero de Sistemas, Universidad del Cauca. &nbsp; | &nbsp; Desarrollador Web Frontend Jr. &nbsp; | &nbsp; Desarrollador Web Full Stack, Oracle ONE.
                     </p>
                 </div>
             </div>
@@ -100,23 +101,34 @@ const AboutMe = () => {
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Projects
                     </h1>
-
-                    <p className={`text-sm md:text-lg font-Onest text-pretty`}>
-                        Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.
-                    </p>
+                    <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                        <li>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gym Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Developed a responsive gym website with workout routines and exercises.</span>
+                        </li>
+                        <li>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Interactive Notary Services Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Created an interactive and responsive website for notary services.</span>
+                        </li>
+                        <li>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>History of Colombia Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Designed a website providing information about the history of Colombia.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             {/* Skills */}
-            <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center text-center flex-row max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-slate-900'} text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Skills
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty`}>
-                        Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.
-                    </p>
+                    <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-4xl`}>
+                        <SiHtml5 />
+                        <SiCss3 />
+                        <SiJavascript />
+                        <SiTailwindcss />
+                        <SiReact />
+                    </div>
                 </div>
             </div>
 
