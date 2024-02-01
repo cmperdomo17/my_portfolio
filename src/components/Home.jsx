@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center pb-8 pt-8">
+            <div className="flex justify-center pb-10 md:pb-8 pt-8">
 
                 <Link to="/contact" className={`p-2 px-4 m-4 text-lg rounded-full hover:scale-110 transition-all duration-500 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
                     Contact Me!
@@ -57,7 +57,7 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className={`text-lg md:text-5xl font-Onest pb-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                <div className={`text-2xl md:text-5xl font-Onest pb-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                     <h1>
                         Recent Projects
                     </h1>
