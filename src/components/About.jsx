@@ -22,7 +22,7 @@ const AboutMe = () => {
                         Systems Engineer Student
                     </h2>
                     {/* Span of city and region */}
-                    <span className={`text-sm md:text-lg font-Menlo ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
+                    <span className={`text-xs md:text-lg font-Menlo ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
                         <MdLocationOn size={18} className="inline mr-1 md:mr-2" />
                         Pitalito - Huila, Colombia
                     </span>
