@@ -10,7 +10,7 @@ const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col h-full pt-40 md:pt-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+        <section className={`flex justify-center flex-col h-full pt-40 md:pt-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-180'}`}>
             <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto gap-2 md:gap-28">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mr-0 md:mr-3`}>
                     {/* Title */}
@@ -29,23 +29,23 @@ const AboutMe = () => {
                     {/* Footer with anchor tags */}
                     <div className="flex">
                         {/* Email */}
-                        <a href="mailto: carlosmarioperdomo555@gmail.com " className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="mailto: carlosmarioperdomo555@gmail.com " className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FiMail size={18} />
                         </a>
                         {/* Phone */}
-                        <a href="tel:+573107209419" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="tel:+573187209419" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FiPhone size={18} />
                         </a>
                         {/* Linkedin */}
-                        <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FaLinkedin size={18} />
                         </a>
                         {/* Github */}
-                        <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FaGithub size={18} />
                         </a>
                         {/* Print */}
-                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <IoPrint size={18} />
                         </a>
                     </div>
@@ -57,14 +57,14 @@ const AboutMe = () => {
                     <img 
                         src={`${process.env.PUBLIC_URL}/me.png`} 
                         alt="Mario" 
-                        className={`w-32 h-32 md:w-48 md:h-48 rounded-full hover:scale-105 transition-all ease-out duration-500 bg-blue-600`}/>
+                        className={`w-32 h-32 md:w-48 md:h-48 rounded-full hover:scale-185 transition-all ease-out duration-500 bg-blue-600`}/>
                 </figure>          
             </div>
 
             {/* About Me */}
             <div className="flex justify-center flex-row items-center mt-20 max-w-[350px] md:max-w-[700px] mx-auto mb-12 ">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-2xl md:text-3xl font-bold font-Onest mb-4`}>
                         About Me
                     </h1>
 
@@ -77,7 +77,7 @@ const AboutMe = () => {
             {/* Experience */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-2xl md:text-3xl font-bold font-Onest mb-4`}>
                         Experience
                     </h1>
 
@@ -90,7 +90,7 @@ const AboutMe = () => {
             {/* Education */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-2xl md:text-3xl font-bold font-Onest mb-4`}>
                         Education
                     </h1>
 
@@ -103,7 +103,7 @@ const AboutMe = () => {
             {/* Projects */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-2xl md:text-3xl font-bold font-Onest mb-4`}>
                         Projects
                     </h1>
                     <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
@@ -123,7 +123,7 @@ const AboutMe = () => {
             {/* Skills */}
             <div className="flex justify-center text-center flex-row max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`${darkMode ? 'text-white' : 'text-slate-900'} text-2xl md:text-4xl font-bold font-Onest mb-4`}>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-slate-900'} text-2xl md:text-3xl font-bold font-Onest mb-4`}>
                         Skills
                     </h1>
 
