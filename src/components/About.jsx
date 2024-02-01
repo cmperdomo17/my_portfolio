@@ -4,6 +4,7 @@ import { MdLocationOn } from 'react-icons/md';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiReact } from 'react-icons/si';
+import { IoPrint } from "react-icons/io5";
 
 const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
@@ -43,7 +44,13 @@ const AboutMe = () => {
                         <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FaGithub size={18} />
                         </a>
+                        {/* Print */}
+                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 px-3 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                            <IoPrint size={18} />
+                        </a>
                     </div>
+
+
                 </div>
                 {/* Profile Picture */}
                 <figure className="mx-auto">
