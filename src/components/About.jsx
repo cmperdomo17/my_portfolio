@@ -1,19 +1,17 @@
 import React, { useContext } from "react";
 import { ThemeContext } from './Theme';
-import { FaLinkedin } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
 import { MdLocationOn } from 'react-icons/md';
-import { FiPhone } from 'react-icons/fi';
-import { FaGithub } from 'react-icons/fa';
+import { FiPhone, FiMail } from 'react-icons/fi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiReact } from 'react-icons/si';
 
 const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col h-[180vh] md:h-[230vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+        <section className={`flex justify-center flex-col h-full pt-40 md:pt-28 ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
             <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto gap-2 md:gap-28">
-                <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mx-2`}>
+                <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mr-3`}>
                     {/* Title */}
                     <h1 className={`text-xl md:text-4xl font-bold font-Onest mb-4`}>
                         Carlos Mario Perdomo
@@ -63,7 +61,7 @@ const AboutMe = () => {
                         About Me
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         I am currently studying the seventh semester of Systems Engineering. I am passionate about frontend development. I live in Pitalito, Huila. I have worked on various web pages remotely and have participated in collaborative projects.
                     </p>
                 </div>
@@ -76,7 +74,7 @@ const AboutMe = () => {
                         Experience
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         I have 1 year of work experience doing frontend for web pages for various clients.
                     </p>
                 </div>
@@ -89,7 +87,7 @@ const AboutMe = () => {
                         Education
                     </h1>
 
-                    <p className={`text-sm md:text-lg font-Onest text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         Ingeniero de Sistemas, Universidad del Cauca. &nbsp; | &nbsp; Desarrollador Web Frontend Jr. &nbsp; | &nbsp; Desarrollador Web Full Stack, Oracle ONE.
                     </p>
                 </div>
@@ -103,13 +101,13 @@ const AboutMe = () => {
                     </h1>
                     <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                         <li>
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gym Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Developed a responsive gym website with workout routines and exercises.</span>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gym Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'} font-ubuntu-mono`}>Developed a responsive gym website with workout routines and exercises.</span>
                         </li>
                         <li>
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Interactive Notary Services Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Created an interactive and responsive website for notary services.</span>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Interactive Notary Services Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'} font-ubuntu-mono`}>Created an interactive and responsive website for notary services.</span>
                         </li>
                         <li>
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>History of Colombia Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'}`}>Designed a website providing information about the history of Colombia.</span>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>History of Colombia Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'} font-ubuntu-mono`}>Designed a website providing information about the history of Colombia.</span>
                         </li>
                     </ul>
                 </div>

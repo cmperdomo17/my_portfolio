@@ -10,13 +10,13 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-[250vh] md:h-[380vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+    <div className={`flex flex-col justify-center h-full pt-40 md:pt-24 ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
                 src={`${process.env.PUBLIC_URL}/me.png`} 
                 alt="Mario" 
-                className={`w-40 h-40 md:w-48 md:h-48 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-white '}`}
+                className={`w-40 h-40 md:w-48 md:h-48 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-blue-600 '}`}
             />
         </Link>
 
@@ -35,17 +35,15 @@ const Home = () => {
             </div>
 
             <div className="pt-10">
-                <div className={`text-base md:text-xl font-Onest ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <p>
+                <div className={`text-base md:text-xl mx-auto max-w-[700px] font-Onest ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                    <p className="text-pretty">
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
-                    </p>
-                    <p>
                         I'm a seventh semester Systems Engineering student at <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>University of Cauca</a>.
                     </p>
                 </div>
             </div>
 
-            <div className="flex justify-center pb-4 pt-4">
+            <div className="flex justify-center pb-8 pt-8">
 
                 <Link to="/contact" className={`p-2 px-4 m-4 text-lg rounded-full hover:scale-110 transition-all duration-500 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
                     Contact Me!
