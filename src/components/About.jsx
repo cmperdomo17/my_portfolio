@@ -10,9 +10,9 @@ const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col h-[200vh] md:h-[230vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
+        <section className={`flex justify-center flex-col h-[180vh] md:h-[230vh] ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-300 to-slate-200'}`}>
             <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto gap-2 md:gap-28">
-                <div className={`${darkMode ? 'text-white' : 'text-slate-900'} `}>
+                <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mx-2`}>
                     {/* Title */}
                     <h1 className={`text-xl md:text-4xl font-bold font-Onest mb-4`}>
                         Carlos Mario Perdomo
@@ -56,7 +56,7 @@ const AboutMe = () => {
             </div>
 
             {/* About Me */}
-            <div className="flex justify-center flex-row items-center mt-20 max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center flex-row items-center mt-20 max-w-[350px] md:max-w-[700px] mx-auto mb-12 ">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         About Me
@@ -69,7 +69,7 @@ const AboutMe = () => {
             </div>
 
             {/* Experience */}
-            <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Experience
@@ -82,7 +82,7 @@ const AboutMe = () => {
             </div>
 
             {/* Education */}
-            <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Education
@@ -95,7 +95,7 @@ const AboutMe = () => {
             </div>
 
             {/* Projects */}
-            <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Projects
@@ -108,7 +108,7 @@ const AboutMe = () => {
             </div>
 
             {/* Skills */}
-            <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto mb-12">
+            <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-4`}>
                         Skills
