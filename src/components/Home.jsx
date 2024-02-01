@@ -18,10 +18,10 @@ const Home = () => {
             />
         </Link>
 
-        <div className="font-Onest font-bold text-center">
+        <div className="font-Onest text-center">
 
             <div className="flex justify-center">
-                <h1 className={`text-4xl md:text-6xl ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
+                <h1 className={`text-4xl md:text-6xl font-bold ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     Hi, I'm <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>Mario!</span>
                 </h1>
             </div>
@@ -43,7 +43,7 @@ const Home = () => {
 
             <div className="flex justify-center pb-10 md:pb-8 pt-8">
 
-                <Link to="/contact" className={`p-2 px-4 m-4 text-lg rounded-full hover:scale-110 transition-all duration-500 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
+                <Link to="/contact" className={`p-2 px-4 m-4 text-lg font-semibold rounded-full hover:scale-110 transition-all duration-500 ${darkMode ? 'bg-blue-400 text-slate-900' : 'bg-blue-600 text-white'}`}>
                     Contact Me!
                 </Link>
 
