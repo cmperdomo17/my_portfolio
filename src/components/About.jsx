@@ -9,7 +9,7 @@ const AboutMe = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col h-full pt-40 md:pt-28 ${darkMode ? 'bg-gradient-to-b from-black to-slate-950' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+        <section className={`flex justify-center flex-col h-full pt-40 md:pt-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
             <div className="flex justify-center flex-row items-center max-w-[700px] mx-auto gap-2 md:gap-28">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mr-0 md:mr-3`}>
                     {/* Title */}
