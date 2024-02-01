@@ -29,23 +29,23 @@ const AboutMe = () => {
                     {/* Footer with anchor tags */}
                     <div className="flex">
                         {/* Email */}
-                        <a href="mailto: carlosmarioperdomo555@gmail.com " className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="mailto: carlosmarioperdomo555@gmail.com " className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FiMail size={18} />
                         </a>
                         {/* Phone */}
-                        <a href="tel:+573187209419" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="tel:+573187209419" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FiPhone size={18} />
                         </a>
                         {/* Linkedin */}
-                        <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FaLinkedin size={18} />
                         </a>
                         {/* Github */}
-                        <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <FaGithub size={18} />
                         </a>
                         {/* Print */}
-                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
+                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
                             <IoPrint size={18} />
                         </a>
                     </div>
