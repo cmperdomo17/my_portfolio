@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         'ubuntu-mono': ['Ubuntu mono', 'Monospace', 'Bold'],
         'Onest': ['Onest', 'Monospace'],
+        'Menlo': ['Menlo', 'Monospace'],
       },
     },
   },

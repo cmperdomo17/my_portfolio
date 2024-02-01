@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
     
-    <div className={`flex flex-col justify-center h-full pt-40 md:pt-24 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+    <div className={`flex flex-col justify-center h-full pt-32 md:pt-20 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
@@ -27,13 +27,13 @@ const Home = () => {
             </div>
             
             <div className="flex justify-center">
-                <h1 className={`text-xl md:text-3xl ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
+                <h1 className={`text-xl md:text-3xl font-Menlo ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     Systems Engineer
                 </h1>
             </div>
 
             <div className="pt-10">
-                <div className={`text-base md:text-xl mx-auto max-w-[700px] font-Onest ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
+                <div className={`text-base md:text-xl mx-4 md:mx-auto max-w-[700px] font-Onest ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     <p className="text-pretty">
                         I'm a software developer with a passion for learning new technologies and building cool stuff.
                         I'm a seventh semester Systems Engineering student at <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>University of Cauca</a>.
@@ -57,7 +57,7 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center">
-                <div className={`text-2xl md:text-5xl font-Onest pb-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
+                <div className={`text-2xl md:text-4xl font-Onest font-semibold pb-8 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`}>
                     <h1>
                         Recent Projects
                     </h1>
