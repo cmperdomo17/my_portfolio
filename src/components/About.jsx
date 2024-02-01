@@ -18,11 +18,11 @@ const AboutMe = () => {
                         Carlos Mario Perdomo
                     </h1>
                     {/* Label */}
-                    <h2 className={`text-xs md:text-2xl mb-2 ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <h2 className={`text-sm md:text-2xl mb-2 ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         Systems Engineer Student
                     </h2>
                     {/* Span of city and region */}
-                    <span className={`text-xs md:text-lg font-ubuntu-mono ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <span className={`text-sm md:text-lg font-ubuntu-mono ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         <MdLocationOn size={18} className="inline mr-1 md:mr-2" />
                         Pitalito - Huila, Colombia
                     </span>
@@ -68,7 +68,7 @@ const AboutMe = () => {
                         About Me
                     </h1>
 
-                    <p className={`text-xs md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         I am currently studying the seventh semester of Systems Engineering. I am passionate about frontend development. I live in Pitalito, Huila. I have worked on various web pages remotely and have participated in collaborative projects.
                     </p>
                 </div>
@@ -81,7 +81,7 @@ const AboutMe = () => {
                         Experience
                     </h1>
 
-                    <p className={`text-xs md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         I have 1 year of work experience doing frontend for web pages for various clients.
                     </p>
                 </div>
@@ -94,7 +94,7 @@ const AboutMe = () => {
                         Education
                     </h1>
 
-                    <p className={`text-xs md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
+                    <p className={`text-sm md:text-lg font-ubuntu-mono text-pretty ${darkMode ? 'text-slate-200' : ' text-gray-700'}`}>
                         Ingeniero de Sistemas, Universidad del Cauca. &nbsp; | &nbsp; Desarrollador Web Frontend Jr. &nbsp; | &nbsp; Desarrollador Web Full Stack, Oracle ONE.
                     </p>
                 </div>
@@ -106,7 +106,7 @@ const AboutMe = () => {
                     <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
                         Projects
                     </h1>
-                    <ul className={`text-xs md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+                    <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                         <li className="mb-3">
                             <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gym Website:</strong> <span className={`${darkMode ? 'text-slate-200' : 'text-gray-700'} font-ubuntu-mono`}>Developed a responsive gym website with workout routines and exercises.</span>
                         </li>
@@ -127,7 +127,7 @@ const AboutMe = () => {
                         Skills
                     </h1>
 
-                    <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-3xl`}>
+                    <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-4xl`}>
                         <SiHtml5 />
                         <SiCss3 />
                         <SiJavascript />
