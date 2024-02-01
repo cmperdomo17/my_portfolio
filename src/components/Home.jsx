@@ -14,9 +14,9 @@ const Home = () => {
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
-                src={`${process.env.PUBLIC_URL}/me2.png`} 
+                src={`${process.env.PUBLIC_URL}/me.png`} 
                 alt="Mario" 
-                className={`w-40 h-40 md:w-52 md:h-52 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-white '}`}
+                className={`w-40 h-40 md:w-48 md:h-48 rounded-full hover:scale-105 transition-all ease-out duration-500 ${darkMode ? 'bg-blue-400 ' : 'bg-white '}`}
             />
         </Link>
 
