@@ -29,7 +29,7 @@ const App = () => {
                 <Footer />
             </ThemeProvider>
         </Router>
-    )
-}
+    );
+};
 
 export default App;

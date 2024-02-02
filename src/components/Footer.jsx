@@ -16,7 +16,7 @@ const Footer = () => {
                     <span className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} font-semibold text-xl`}>dev</span> with
                 </span>
 
-                <FaReact size={32}className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
+                <FaReact size={32} className={`${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
 
                 <span className={`${darkMode ? 'text-zinc-300' : 'text-slate-950'}`}>and</span>
 

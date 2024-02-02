@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
+import Links from "./Links";
 import { ThemeContext } from './Theme';
+
 import { MdLocationOn } from 'react-icons/md';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -29,27 +31,16 @@ const AboutMe = () => {
                     {/* Footer with anchor tags */}
                     <div className="flex">
                         {/* Email */}
-                        <a href="mailto: carlosmarioperdomo555@gmail.com " className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
-                            <FiMail size={18} />
-                        </a>
+                        <Links href="mailto: carlosmarioperdomo555@gmail.com "><FiMail size={18} /></Links>
                         {/* Phone */}
-                        <a href="tel:+573187209419" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
-                            <FiPhone size={18} />
-                        </a>
+                        <Links href="tel:+573187209419"><FiPhone size={18} /></Links>
                         {/* Linkedin */}
-                        <a href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
-                            <FaLinkedin size={18} />
-                        </a>
+                        <Links href="https://www.linkedin.com/in/mario-perdomo-ramos-28506b251/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={18} /></Links>
                         {/* Github */}
-                        <a href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
-                            <FaGithub size={18} />
-                        </a>
+                        <Links href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer"><FaGithub size={18} /></Links>
                         {/* Print */}
-                        <a href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf" className={`p-2 mr-1 md:mr-4 mt-4 text-xl rounded-full hover:scale-110 md:hover:scale-125 transition-all duration-500 bg-blue-600 text-white flex items-center justify-center`}>
-                            <IoPrint size={18} />
-                        </a>
+                        <Links href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf"><IoPrint size={18} /></Links>
                     </div>
-
 
                 </div>
                 {/* Profile Picture */}

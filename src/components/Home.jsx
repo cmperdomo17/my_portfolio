@@ -2,13 +2,15 @@ import React, { useContext } from "react";
 import { ThemeContext } from './Theme';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ProjectCard from "./ProjectCard";
+import InputContact from "./InputContact";
 
 const Home = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
     
-    <div className={`flex flex-col justify-center h-full pt-32 md:pt-20 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+    <section className={`flex flex-col justify-center h-full pt-32 md:pt-20 pb-10 md:pb-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
         
         <Link to='/about' className="flex justify-center pb-4">
             <img 
@@ -64,39 +66,41 @@ const Home = () => {
                 </div>
             </div>
 
-            <section className="grid grid-cols-1 grid-rows-4 md:grid-cols-2 justify-center mx-4 md:mx-24 gap-4">        
-                <div className="flex justify-center items-center col-start-1 row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
-                    <img className="w-full h-full hover:opacity-90" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 2" />
-                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">ToDo App</h3>
-                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
-                    </div>
-                </div>
+            <section className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 justify-center mx-4 md:mx-24 gap-6">
 
-                <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-2 md:row-start-1 overflow-hidden rounded-2xl cursor-pointer relative">
-                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 2" />
-                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">Digital Notary</h3>
-                        <p className="text-white">Digital notary where you can request procedures online</p>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center col-start-1 md:col-start-1 row-start-3 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
-                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/7.png`} alt="Card 3" />
-                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">ToDo App</h3>
-                        <p className="text-white">A toDo App, where you can mark tasks as completed and much more</p>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center col-start-1 md:col-start-2 row-start-4 md:row-start-2 overflow-hidden rounded-2xl cursor-pointer relative">
-                    <img className="w-full h-auto hover:opacity-80" src={`${process.env.PUBLIC_URL}/8.png`} alt="Card 4" />
-                    <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-500">
-                        <h3 className="text-blue-500">Digital Notary</h3>
-                        <p className="text-white">Digital notary where you can request procedures online</p>
-                    </div>
-                </div>
+                <ProjectCard 
+                    title="ToDo App" 
+                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    imgURL={`${process.env.PUBLIC_URL}/7.png`} 
+                />
+
+                <ProjectCard 
+                    title="Digital Notary" 
+                    description="Digital notary where you can request procedures online" 
+                    imgURL={`${process.env.PUBLIC_URL}/8.png`} 
+                />
+
+                
+                <ProjectCard 
+                    title="Digital Notary" 
+                    description="Digital notary where you can request procedures online" 
+                    imgURL={`${process.env.PUBLIC_URL}/8.png`} 
+                />
+
+                <ProjectCard 
+                    title="ToDo App" 
+                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    imgURL={`${process.env.PUBLIC_URL}/7.png`} 
+                />
+                
+
             </section>
+
+            {/* Input Contact */}
+            <InputContact />
+
         </div>
-    </div>
+    </section>
     )
 }
 
