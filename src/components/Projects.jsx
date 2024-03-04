@@ -16,7 +16,7 @@ const Projects = () => {
             <section className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 justify-center mx-4 md:mx-24 gap-10">
                 <ProjectCard 
                     title="ToDo App" 
-                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    description="A toDo List, where you can mark tasks as completed and much more" 
                     imgURL={`${process.env.PUBLIC_URL}/7.png`} 
                     githubURL={'https://github.com/cmperdomo17/to-do-app'}
                     visitURL={'https://thetodoapp777.netlify.app/'}
@@ -41,7 +41,7 @@ const Projects = () => {
 
                 <ProjectCard 
                     title="ToDo App" 
-                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    description="A toDo List, where you can mark tasks as completed and much more" 
                     imgURL={`${process.env.PUBLIC_URL}/7.png`} 
                     githubURL={'https://github.com/cmperdomo17/to-do-app'}
                     visitURL={'https://thetodoapp777.netlify.app/'}

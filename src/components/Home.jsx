@@ -70,7 +70,7 @@ const Home = () => {
 
                 <ProjectCard 
                     title="ToDo App" 
-                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    description="A toDo List, where you can mark tasks as completed and much more" 
                     imgURL={`${process.env.PUBLIC_URL}/7.png`} 
                     githubURL={'https://github.com/cmperdomo17/to-do-app'}
                     visitURL={'https://thetodoapp777.netlify.app/'}
@@ -95,7 +95,7 @@ const Home = () => {
 
                 <ProjectCard 
                     title="ToDo App" 
-                    description="A toDo App, where you can mark tasks as completed and much more" 
+                    description="A toDo List, where you can mark tasks as completed and much more" 
                     imgURL={`${process.env.PUBLIC_URL}/7.png`} 
                     githubURL={'https://github.com/cmperdomo17/to-do-app'}
                     visitURL={'https://thetodoapp777.netlify.app/'}

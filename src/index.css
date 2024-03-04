@@ -39,7 +39,6 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #7ac4e6;
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -49,13 +48,8 @@
     transform: rotateX(0deg);
 }
 
-.card__title {
-    color: #020617;
-}
-
 .card__description {
     text-align: center;
-    color: #01030d;
     line-height: 1.4;
 }
 
@@ -127,7 +121,6 @@
     transition-duration: .4s;
     cursor: pointer;
     position: relative;
-    background-color: #020617;
     overflow: hidden;
 }
 
@@ -135,21 +128,8 @@
     transition-duration: .3s;
 }
 
-.svgIcon path {
-    fill: white;
-}
-
-.svgIcon2 path {
-    fill: none;
-}
-
-.svgIcon2 {
-    color: #fff;
-}
-
 .text {
     position: absolute;
-    color: #fff;
     font-size: 1.1rem;
     font-weight: 600;
     opacity: 0;
