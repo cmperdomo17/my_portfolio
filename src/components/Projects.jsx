@@ -6,7 +6,7 @@ const Projects = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col h-full py-28 md:py-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+        <section className={`flex justify-center flex-col h-full py-28 md:py-28 font-Onest ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
             <div className="flex justify-center">
                 <div className={`text-2xl md:text-4xl font-Onest font-bold pb-10 ${darkMode ? 'text-blue-300' : 'text-blue-600'}`}>
                     <h1>My Projects</h1>

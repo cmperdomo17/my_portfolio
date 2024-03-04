@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ title, description, imgURL, githubURL, visitURL }) => {
     return (
-        <div className="card">
+        <div className="card font-Onest">
             <img className="w-full h-full hover:opacity-90" src={imgURL} alt={title} />
             <div className="card__content">
                 <h3 className="card__title text-3xl md:text-5xl font-bold">{title}</h3>
