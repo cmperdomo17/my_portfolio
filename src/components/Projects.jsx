@@ -32,19 +32,19 @@ const Projects = () => {
 
                 
                 <ProjectCard 
-                    title="Digital Notary" 
-                    description="Digital notary where you can request procedures online" 
-                    imgURL={`${process.env.PUBLIC_URL}/8.png`} 
-                    githubURL={'https://github.com/cmperdomo17/alba-luz-web-page-app'}
-                    visitURL={'https://albaluzramos.netlify.app/'}
+                    title="Text Decrypter"
+                    description="Text decrypter using JavaScript. Challenge from Alura ONE" 
+                    imgURL={`${process.env.PUBLIC_URL}/9.png`} 
+                    githubURL={'https://github.com/cmperdomo17/Encriptador-JS'}
+                    visitURL={'https://encriptador-mariodev.vercel.app/'}
                 />
 
                 <ProjectCard 
-                    title="ToDo App" 
-                    description="A toDo List, where you can mark tasks as completed and much more" 
-                    imgURL={`${process.env.PUBLIC_URL}/7.png`} 
-                    githubURL={'https://github.com/cmperdomo17/to-do-app'}
-                    visitURL={'https://thetodoapp777.netlify.app/'}
+                    title="Personal Page" 
+                    description="Personal Page using only HTML5, CSS3 and JavaScript" 
+                    imgURL={`${process.env.PUBLIC_URL}/10.png`} 
+                    githubURL={'https://github.com/cmperdomo17/personal-page-mariodev'}
+                    visitURL={'https://mariodev-page.vercel.app/'}
                 />
             </section>
         </section>
