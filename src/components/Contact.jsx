@@ -10,7 +10,7 @@ const Contact = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <section className={`flex justify-center flex-col font-Onest h-full pt-40 md:pt-28 pb-10 md:pb-28 ${darkMode ? 'bg-gradient-to-b from-slate-950 to-slate-900' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
+        <section className={`flex justify-center flex-col font-Onest h-full pt-40 md:pt-28 pb-10 md:pb-28 ${darkMode ? 'bg-gradient-to-b from-zinc-950 to-slate-950' : 'bg-gradient-to-b from-slate-200 to-slate-100'}`}>
             <div className="flex justify-center flex-row items-center max-w-[700px] mx-10 md:mx-auto gap-2 md:gap-28">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'} mr-0 md:mr-3`}>
                     <h1 className={`text-2xl md:text-4xl font-bold font-Onest mb-2`}>

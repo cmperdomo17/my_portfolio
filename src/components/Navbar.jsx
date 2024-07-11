@@ -15,7 +15,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <nav className={`${darkMode ? 'bg-slate-950 text-slate-200' : 'bg-slate-200 text-slate-950'} fixed top-0 left-0 w-full p-3 z-50`}>
+            <nav className={`${darkMode ? 'bg-zinc-950 text-slate-200' : 'bg-slate-200 text-slate-950'} fixed top-0 left-0 w-full p-3 z-50`}>
                 <div className="flex flex-col md:flex-row justify-between items-center m-auto">
                     <Link to='/' className="font-Onest font-bold text-center cursor-pointer mb-4 md:mb-0 duration-500">
                         <h1 className="text-xl hover:scale-110 transition-all ease-out pl-0 md:pl-24">

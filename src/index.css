@@ -2,10 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.navbar {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
-}
-
 .card {
     position: relative;
     background-color: transparent;

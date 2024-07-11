@@ -7,7 +7,7 @@ const Footer = () => {
     const { darkMode } = useContext(ThemeContext);
 
     return (
-        <footer className={`flex justify-center items-center text-center h-14 ${darkMode ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-950'}`}>
+        <footer className={`flex justify-center items-center text-center h-14 ${darkMode ? 'bg-slate-950 text-white' : 'bg-slate-100 text-slate-950'}`}>
             
             <p className="text-md font-Onest flex items-center justify-center space-x-2">
                 

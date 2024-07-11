@@ -8,6 +8,10 @@ module.exports = {
         'Onest': ['Onest', 'Monospace'],
         'Menlo': ['Menlo', 'Monospace'],
       },
+      colors: {
+        'darkmode': 'rgba(4,8,25,1)',
+        'lightmode': 'rgba(255,255,255,1)',
+      }
     },
   },
   plugins: [],
