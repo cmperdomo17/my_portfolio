@@ -21,7 +21,7 @@ const AboutMe = () => {
                     </h1>
                     {/* Label */}
                     <h2 className={`text-sm md:text-2xl font-Menlo mb-2 ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
-                        Systems Engineer Student
+                        Frontend Developer
                     </h2>
                     {/* Span of city and region */}
                     <span className={`text-xs md:text-lg font-Menlo ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
@@ -60,7 +60,7 @@ const AboutMe = () => {
                     </h1>
 
                     <p className={`text-sm md:text-lg font-Menlo text-pretty ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
-                        I am currently studying the seventh semester of Systems Engineering. I am passionate about frontend development. I live in Pitalito, Huila. I have worked on various web pages remotely and have participated in collaborative projects.
+                        Web developer with 2 years of experience developing interactive and functional user interfaces. With experience in modern technologies such as Next.js, React and Angular, with solid knowledge in TailwindCSS, API management, UI design with Figma and SQL database management.
                     </p>
                 </div>
             </div>
@@ -73,7 +73,7 @@ const AboutMe = () => {
                     </h1>
 
                     <p className={`text-sm md:text-lg font-Menlo text-pretty ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
-                        I have 1 year of work experience doing frontend for web pages for various clients.
+                        I have 2 years of work experience developing frontend projects both for the university, personal and for the Oracle Next Education program
                     </p>
                 </div>
             </div>
@@ -86,7 +86,7 @@ const AboutMe = () => {
                     </h1>
 
                     <p className={`text-sm md:text-lg font-Menlo text-pretty ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
-                        Ingeniero de Sistemas, Universidad del Cauca. &nbsp; | &nbsp; Desarrollador Web Frontend Jr. &nbsp; | &nbsp; Desarrollador Web Full Stack, Oracle ONE.
+                        Desarrollador Web Frontend &nbsp; | &nbsp; Ingeniero de Sistemas, Universidad del Cauca &nbsp; | &nbsp; Oracle ONE Frontend
                     </p>
                 </div>
             </div>
@@ -95,17 +95,16 @@ const AboutMe = () => {
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
-                        Projects
+                        Featured Projects
                     </h1>
                     <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                         <li className="mb-3">
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gym Website:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Developed a responsive gym website with workout routines and exercises.</span>
+                            <a href="https://aluraflixweb.vercel.app/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>
+                                <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Aluraflix:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Desarrollé una aplicación web tipo Netflix utilizando React, TypeScript y Tailwind CSS, con una fake API implementada con JSON Server.</span>
+                            </a>
                         </li>
                         <li className="mb-3">
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Interactive Notary Services Website:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Created an interactive and responsive website for notary services.</span>
-                        </li>
-                        <li className="mb-3">
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>History of Colombia Website:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Designed a website providing information about the history of Colombia.</span>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gestión de Horarios SENA:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Desarrollé el frontend de una aplicación web completa con Angular para gestionar horarios, profesores y ambientes del SENA, incluyendo autenticación y dashboard con múltiples CRUDs.</span>
                         </li>
                     </ul>
                 </div>

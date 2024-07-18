@@ -20,7 +20,7 @@ const Home = () => {
             />
         </Link>
 
-        <div className="font-Onest text-center">
+        <div className="font-Onest text-center pb-32">
 
             <div className="flex justify-center">
                 <h1 className={`text-4xl md:text-6xl font-bold ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
@@ -37,8 +37,8 @@ const Home = () => {
             <div className="pt-10">
                 <div className={`text-sm md:text-lg mx-10 md:mx-auto max-w-[600px] font-Onest ${darkMode ? 'text-slate-200' : 'text-slate-900'}`}>
                     <p className="text-pretty">
-                        Software developer and <strong>Systems Engineering</strong> student at 
-                        <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline font-semibold`}> University of Cauca</a>, with two years of <strong>Frontend</strong> development experience.
+                        <strong>Frontend Developer</strong> with two years of experience, <strong>Systems Engineering</strong> student at 
+                        <a href="https://www.unicauca.edu.co/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline font-semibold`}> University of Cauca</a>.
                     </p>
                 </div>
             </div>
