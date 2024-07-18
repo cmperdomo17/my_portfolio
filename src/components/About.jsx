@@ -118,13 +118,13 @@ const AboutMe = () => {
                     </h1>
 
                     <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-4xl py-10`}>
-                        <SiHtml5 />
-                        <SiCss3 />
-                        <SiJavascript />
-                        <SiTypescript />
-                        <SiTailwindcss />
-                        <SiReact />
-                        <SiAngular />
+                        <SiHtml5 className="size-7 md:size-14" />
+                        <SiCss3 className="size-7 md:size-14" />
+                        <SiJavascript className="size-7 md:size-14" />
+                        <SiTypescript className="size-7 md:size-14" />
+                        <SiTailwindcss className="size-7 md:size-14" />
+                        <SiReact className="size-7 md:size-14" />
+                        <SiAngular className="size-7 md:size-14" />
                     </div>
                 </div>
             </div>
