@@ -5,7 +5,7 @@ import { ThemeContext } from './Theme';
 import { MdLocationOn } from 'react-icons/md';
 import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiReact } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiReact, SiAngular, SiTypescript } from 'react-icons/si';
 import { IoPrint } from "react-icons/io5";
 
 const AboutMe = () => {
@@ -39,7 +39,7 @@ const AboutMe = () => {
                         {/* Github */}
                         <Links href="https://github.com/cmperdomo17" target="_blank" rel="noopener noreferrer"><FaGithub size={18} /></Links>
                         {/* Print */}
-                        <Links href={`${process.env.PUBLIC_URL}/cv.pdf`} download="cv.pdf"><IoPrint size={18} /></Links>
+                        <Links href={`${process.env.PUBLIC_URL}/my_cv.pdf`} download="cv.pdf"><IoPrint size={18} /></Links>
                     </div>
 
                 </div>
@@ -55,7 +55,7 @@ const AboutMe = () => {
             {/* About Me */}
             <div className="flex justify-center flex-row items-center mt-12 max-w-[350px] md:max-w-[700px] mx-auto mb-12 ">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-6`}>
                         About Me
                     </h1>
 
@@ -68,7 +68,7 @@ const AboutMe = () => {
             {/* Experience */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-6`}>
                         Experience
                     </h1>
 
@@ -81,12 +81,12 @@ const AboutMe = () => {
             {/* Education */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-6`}>
                         Education
                     </h1>
 
                     <p className={`text-sm md:text-lg font-Menlo text-pretty ${darkMode ? 'text-slate-300' : ' text-gray-700'}`}>
-                        Desarrollador Web Frontend &nbsp; | &nbsp; Ingeniero de Sistemas, Universidad del Cauca &nbsp; | &nbsp; Oracle ONE Frontend
+                        Frontend Web Developer &nbsp; | &nbsp; Systems Engineer, University of Cauca &nbsp; | &nbsp; Oracle ONE Frontend
                     </p>
                 </div>
             </div>
@@ -94,17 +94,17 @@ const AboutMe = () => {
             {/* Projects */}
             <div className="flex justify-center flex-row items-center max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-4`}>
+                    <h1 className={`text-xl md:text-3xl font-bold font-Onest mb-6`}>
                         Featured Projects
                     </h1>
                     <ul className={`text-sm md:text-lg font-Onest text-pretty list-disc pl-5 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                        <li className="mb-3">
+                        <li className="mb-6">
                             <a href="https://aluraflixweb.vercel.app/" target="_blank" rel="noopener noreferrer" className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} hover:underline`}>
-                                <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Aluraflix:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Desarrollé una aplicación web tipo Netflix utilizando React, TypeScript y Tailwind CSS, con una fake API implementada con JSON Server.</span>
+                                <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Aluraflix:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>I developed a Netflix-like web application using React, TypeScript, and Tailwind CSS, with a fake API implemented using JSON Server.</span>
                             </a>
                         </li>
                         <li className="mb-3">
-                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>Gestión de Horarios SENA:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>Desarrollé el frontend de una aplicación web completa con Angular para gestionar horarios, profesores y ambientes del SENA, incluyendo autenticación y dashboard con múltiples CRUDs.</span>
+                            <strong className={`${darkMode ? 'text-white' : 'text-gray-700'}`}>SENA Schedule Management:</strong> <span className={`${darkMode ? 'text-slate-300' : 'text-gray-700'} font-Menlo`}>I developed the frontend of a complete web application with Angular to manage schedules, teachers, and environments at SENA, including authentication and a dashboard with multiple CRUDs.</span>
                         </li>
                     </ul>
                 </div>
@@ -113,16 +113,18 @@ const AboutMe = () => {
             {/* Skills */}
             <div className="flex justify-center text-center flex-row max-w-[350px] md:max-w-[700px] mx-auto mb-12">
                 <div className={`${darkMode ? 'text-white' : 'text-slate-900'}`}>
-                    <h1 className={`${darkMode ? 'text-white' : 'text-slate-900'} text-xl md:text-3xl font-bold font-Onest mb-4`}>
+                    <h1 className={`${darkMode ? 'text-white' : 'text-slate-900'} text-xl md:text-3xl font-bold font-Onest mb-6`}>
                         Skills
                     </h1>
 
-                    <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-4xl`}>
+                    <div className={`${darkMode ? 'text-blue-400' : 'text-blue-600'} flex justify-around gap-6 text-4xl py-10`}>
                         <SiHtml5 />
                         <SiCss3 />
                         <SiJavascript />
+                        <SiTypescript />
                         <SiTailwindcss />
                         <SiReact />
+                        <SiAngular />
                     </div>
                 </div>
             </div>
